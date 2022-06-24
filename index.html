@@ -3,19 +3,48 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-  </head>
+    <title>Games From Centauri | Home</title>
+    <link rel="stylesheet" href="bulma/css/bulma.css">
+  </head>   
+
   <body>
-  <section class="section">
-    <div class="container">
-      <h1 class="title">
-        Hello World
-      </h1>
-      <p class="subtitle">
-        What's up party people!
-      </p>
-    </div>
-  </section>
-  </body>
+    <section class="hero is-dark is-small">
+      
+        <!-- Hero content: will be in the middle -->
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <p class="title">
+              Games from Centauri
+            </p>
+            <p class="subtitle">
+              Taken directly from the cosmos!
+            </p>
+          </div>
+        </div>
+
+    </section>
+    <section class="section has-background-grey-dark">
+    <div class="tile is-ancestor">
+    <div class="tile is-vertical is-6">
+      <div class="tile">
+        <!-- Game Tile -->
+        <div class="tile is-parent">
+          <article class="tile is-child notification is-light">
+            <p class="title">White Death</p>
+            <p class="subtitle">2022 | Ludum Dare 50</p>
+            <a href="game-whitedeath/game.html"><button class="button is-primary is-medium is-fullwidth">Play</button></a>         
+            <figure class="image is-16by9 ">
+              <img src="media/whitedeath.gif">
+            </figure>
+            <div class="buttons are-medium is-centered has-addons">
+              <button class="button is-link is-outlined">Details</button>
+              <button class="button is-link is-outlined">Jam page</button>              
+              <button class="button is-link is-outlined">Itch.io page</button>              
+            </div>
+          </article>
+        </div>
+      </div>
+  </div>
+</section>
+</body>
 </html>
