@@ -31,20 +31,37 @@
         <div class="tile is-parent">
           <article class="tile is-child notification is-light">
             <p class="title">White Death</p>
-            <p class="subtitle">2022 | Ludum Dare 50</p>
-            <a href="game-whitedeath/game.html"><button class="button is-primary is-medium is-fullwidth">Play</button></a>         
-            <figure class="image is-16by9 ">
+            <p class="subtitle">4-2022 | Ludum Dare 50</p>
+            <button class="button is-primary is-medium is-fullwidth" id="game_wd_play" onclick='playInBrowser("wd")'>Play</button></a>
+            <button class="is-hidden" id="game_wd_hide" onclick='hideInBrowser("wd")'>Stop Playing</button></a>     
+
+            <iframe frameborder="0" src="https://itch.io/embed-upload/5538726?color=000000" 
+            allowfullscreen="" width="980" height="680" id="game_wd" hidden><a href="https://roboolet.itch.io/white-death">Play White Death on itch.io</a></iframe>
+            <figure class="image is-16by9" id="game_wd_cover">
               <img src="media/whitedeath.gif">
             </figure>
             <div class="buttons are-medium is-centered has-addons">
-              <button class="button is-link is-outlined">Details</button>
-              <button class="button is-link is-outlined">Jam page</button>              
-              <button class="button is-link is-outlined">Itch.io page</button>              
+              <a class="button is-link is-outlined" >Details</a>
+              <a class="button is-link is-outlined" href="https://ldjam.com/events/ludum-dare/50/white-death" target="_blank">Jam page</a>              
+              <a class="button is-link is-outlined" href="https://roboolet.itch.io/white-death" target="_blank">Itch.io page</a>              
             </div>
           </article>
         </div>
       </div>
   </div>
+  <!--Enabling and disabling the game embeds-->
+  <script>function playInBrowser(a){
+    document.getElementById("game_"+arguments[0]).hidden = false
+    document.getElementById("game_"+arguments[0]+"_cover").className="image is-16by9 is-hidden"
+    document.getElementById("game_"+arguments[0]+"_play").className="is-hidden"              
+    document.getElementById("game_"+arguments[0]+"_hide").className="button is-dark is-medium is-fullwidth"
+  }</script>    
+  <script>function hideInBrowser(a){
+    document.getElementById("game_"+arguments[0]).hidden = true
+    document.getElementById("game_"+arguments[0]+"_cover").className="image is-16by9"
+    document.getElementById("game_"+arguments[0]+"_play").className="button is-primary is-medium is-fullwidth"              
+    document.getElementById("game_"+arguments[0]+"_hide").className="is-hidden"
+  }</script> 
 </section>
 </body>
 </html>
