@@ -25,40 +25,72 @@
     </section>
     <section class="section has-background-grey-dark">
     <div class="tile is-ancestor">
-    <div class="tile is-vertical is-6">
-      <div class="tile">
-        <!-- Game Tile -->
-        <div class="tile is-parent">
-          <article class="tile is-child notification is-light">
-            <p class="title">White Death</p>
-            <p class="subtitle">4-2022 | Ludum Dare 50</p>
-            <button class="button is-primary is-medium is-fullwidth" id="game_wd_play" onclick='playInBrowser("wd")'>Play</button></a>
-            <button class="is-hidden" id="game_wd_hide" onclick='hideInBrowser("wd")'>Stop Playing</button></a>     
-
-            <iframe frameborder="0" src="https://itch.io/embed-upload/5538726?color=000000" 
-            allowfullscreen="" width="980" height="680" id="game_wd" hidden><a href="https://roboolet.itch.io/white-death">Play White Death on itch.io</a></iframe>
-            <figure class="image is-16by9" id="game_wd_cover">
-              <img src="media/whitedeath.gif">
-            </figure>
-            <div class="buttons are-medium is-centered has-addons">
-              <a class="button is-link is-outlined" >Details</a>
-              <a class="button is-link is-outlined" href="https://ldjam.com/events/ludum-dare/50/white-death" target="_blank">Jam page</a>              
-              <a class="button is-link is-outlined" href="https://roboolet.itch.io/white-death" target="_blank">Itch.io page</a>              
-            </div>
-          </article>
-        </div>
-      </div>
+      <div class="tile is-vertical is-6">
+        <div class="tile">
+          <!-- White Death -->
+          <div class="tile is-parent">
+            <article class="tile is-child notification is-light">
+              <p class="title">White Death</p>
+              <p class="subtitle">4-2022 | Ludum Dare 50</p>
+              <button class="button is-primary is-medium is-fullwidth" id="game_wd_play" onclick='playInBrowser("wd", "is-4by3")'>Play</button></a>
+              <button class="is-hidden" id="game_wd_hide" onclick='hideInBrowser("wd","is-16by9")'>Stop Playing</button></a>         
+              
+              <figure class="is-hidden">
+                <iframe id="game_wd" class="has-ratio"frameborder="0" src="https://itch.io/embed-upload/5538726?color=000000" 
+                allowfullscreen="" width="980" height="680"><a href="https://roboolet.itch.io/white-death">Play White Death on itch.io</a></iframe>   
+              </figure>
+                            
+              <figure class="image is-16by9" id="game_wd_cover">
+                <img src="media/whitedeath.gif">
+              </figure>
+              <div class="buttons are-medium is-centered has-addons">
+                <a class="button is-link is-outlined" >Details</a>
+                <a class="button is-link is-outlined" href="https://ldjam.com/events/ludum-dare/50/white-death" target="_blank">Jam page</a>              
+                <a class="button is-link is-outlined" href="https://roboolet.itch.io/white-death" target="_blank">Itch.io page</a>              
+              </div>
+            </article>
+          </div>
+        </div>    
+      </div>     
+      <div class="tile is-middle is-5">
+        <div class="tile">
+          <!-- JAUT! -->
+          <div class="tile is-parent">
+            <article class="tile is-child notification is-light">
+              <p class="title">Jaut!!</p>
+              <p class="subtitle">7-2022 | GMTK Jam 2022</p>
+              <button class="button is-primary is-medium is-fullwidth" id="game_jaut_play" onclick='playInBrowser("jaut", "is-5by4")'>Play</button></a>
+              <button class="is-hidden" id="game_jaut_hide" onclick='hideInBrowser("jaut", "is-1by1")'>Stop Playing</button></a>         
+              
+              <figure class="is-hidden">
+                <iframe class="has-ratio" id="game_jaut" frameborder="0" src="https://itch.io/embed-upload/6224920?color=020202" allowfullscreen="" width="896" height="916"><a href="https://roboolet.itch.io/jaut">Play Jaut!! on itch.io</a></iframe>
+              </figure>
+                            
+              <figure class="image is-1by1" id="game_jaut_cover">
+                <img src="media/jaut.gif">
+              </figure>
+              <div class="buttons are-medium is-centered has-addons">
+                <a class="button is-link is-outlined" >Details</a>
+                <a class="button is-link is-outlined" href="https://itch.io/jam/gmtk-jam-2022/rate/1622286" target="_blank">Jam page</a>              
+                <a class="button is-link is-outlined" href="https://roboolet.itch.io/jaut" target="_blank">Itch.io page</a>              
+              </div>
+            </article>
+          </div>
+        </div>    
+      </div>    
   </div>
   <!--Enabling and disabling the game embeds-->
-  <script>function playInBrowser(a){
+  <script>function playInBrowser(){
     document.getElementById("game_"+arguments[0]).hidden = false
-    document.getElementById("game_"+arguments[0]+"_cover").className="image is-16by9 is-hidden"
+    document.getElementById("game_"+arguments[0]).parentElement.className="image "+arguments[1]
+    document.getElementById("game_"+arguments[0]+"_cover").className="is-hidden"
     document.getElementById("game_"+arguments[0]+"_play").className="is-hidden"              
     document.getElementById("game_"+arguments[0]+"_hide").className="button is-dark is-medium is-fullwidth"
   }</script>    
-  <script>function hideInBrowser(a){
+  <script>function hideInBrowser(){
     document.getElementById("game_"+arguments[0]).hidden = true
-    document.getElementById("game_"+arguments[0]+"_cover").className="image is-16by9"
+    document.getElementById("game_"+arguments[0]).parentElement.className="is-hidden"
+    document.getElementById("game_"+arguments[0]+"_cover").className="image "+arguments[1]
     document.getElementById("game_"+arguments[0]+"_play").className="button is-primary is-medium is-fullwidth"              
     document.getElementById("game_"+arguments[0]+"_hide").className="is-hidden"
   }</script> 
