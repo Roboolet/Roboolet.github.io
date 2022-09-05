@@ -6,24 +6,11 @@
     <title>Games From Centauri | Home</title>
     <link rel="shortcut icon" type="image/png" href="media/favicon.png">
     <link rel="stylesheet" href="bulma/css/bulma.css">
-    <script
-    src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
-    crossorigin="anonymous"></script>
-    <script>
-    $(document).ready(function() {
-
-      // Check for click events on the navbar burger icon
-      $(".navbar-burger").click(function() {
-    
-          $(".navbar-burger").toggleClass("is-active");
-          $(".navbar-menu").toggleClass("is-active");
-          $(".hero-foot").toggleClass("is-hidden");
-      });
-    });</script>
   </head>   
 
   <body>
+    <script src="menu.js"></script>
+
     <section class="hero is-dark is-small">      
       <div class="hero-head">
         <nav class="navbar">
@@ -34,7 +21,7 @@
                   Games from Centauri
                 </p>
               </a>
-              <span class="navbar-burger" data-target="navbarMenuHeroA">
+              <span class="navbar-burger" id="navbar-burger" data-target="navbarMenuHeroA">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -53,7 +40,7 @@
           </div>
         </nav>
       </div>
-        <div class="hero-foot pb-4">
+        <div class="hero-foot pb-4" id="hero-foot">
           <div class="container">            
             <p class="subtitle pl-4">
               Taken directly from the cosmos!
