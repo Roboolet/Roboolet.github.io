@@ -9751,6 +9751,10 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   margin-top: 3rem !important;
 }
 
+.mt-12 {
+  margin-top: 6rem !important;
+}
+
 .mr-6 {
   margin-right: 3rem !important;
 }
