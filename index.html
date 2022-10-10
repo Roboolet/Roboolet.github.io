@@ -1,382 +1,418 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Games From Centauri | Home</title>    
-    <link rel="shortcut icon" type="image/png" href="media/favicon.png">
 
-    <!-- Google / Search Engine Tags -->
-    <meta itemprop="name" content="Games From Centauri">
-    <meta itemprop="description" content="Personal website of Bram van der Cruijsen">
-    <meta itemprop="image" content="https://roboolet.github.io/media/social.png">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Games From Centauri | Home</title>
+  <link rel="shortcut icon" type="image/png" href="media/favicon.png">
 
-    <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://roboolet.github.io/">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Games From Centauri">
-    <meta property="og:description" content="Personal website of Bram van der Cruijsen">
-    <meta property="og:image" content="https://roboolet.github.io/media/social.png">
+  <!-- Google / Search Engine Tags -->
+  <meta itemprop="name" content="Games From Centauri">
+  <meta itemprop="description" content="Personal website of Bram van der Cruijsen">
+  <meta itemprop="image" content="https://roboolet.github.io/media/social.png">
 
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Games From Centauri">
-    <meta name="twitter:description" content="Personal website of Bram van der Cruijsen">
-    <meta name="twitter:image" content="https://roboolet.github.io/media/social.png"> 
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://roboolet.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Games From Centauri">
+  <meta property="og:description" content="Personal website of Bram van der Cruijsen">
+  <meta property="og:image" content="https://roboolet.github.io/media/social.png">
 
-    <link rel="stylesheet" href="bulma/css/bulma.css">
-  </head>   
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Games From Centauri">
+  <meta name="twitter:description" content="Personal website of Bram van der Cruijsen">
+  <meta name="twitter:image" content="https://roboolet.github.io/media/social.png">
 
-  <body>
-    <script src="menu.js"></script>
+  <link rel="stylesheet" href="bulma/css/bulma.css">
+</head>
 
-    <nav class="navbar is-fixed-top is-dark">
-      <div class="container">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="index.html">
-            <div class="column">
-              <p class="title has-text-light">
-                Games from Centauri
-              </p> 
-              <p class="subtitle has-text-light ml-3">
-                Taken directly from the cosmos!
-              </p>   
-            </div>
-          </a>
-          <span class="navbar-burger is-white" id="navbar-burger" data-target="navbarMenuHeroA">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-        </div>      
-        <div id="navbarMenuHeroA" class="navbar-menu">
-          <div class="navbar-end">
-            <a class="navbar-item is-active">
-              Projects
-            </a>
-            <a class="navbar-item" href="cv.html">
-              CV
-            </a>
+<body>
+  <script src="menu.js"></script>
+
+  <nav class="navbar is-fixed-top is-dark">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+          <div class="column">
+            <p class="title has-text-light">
+              Games from Centauri
+            </p>
+            <p class="subtitle has-text-light ml-3">
+              Taken directly from the cosmos!
+            </p>
           </div>
+        </a>
+        <span class="navbar-burger is-white" id="navbar-burger" data-target="navbarMenuHeroA">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </div>
+      <div id="navbarMenuHeroA" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item is-active">
+            Projects
+          </a>
+          <a class="navbar-item" href="cv.html">
+            CV
+          </a>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <section class="section has-background-light mt-12">
+  <section class="section has-background-light mt-12">
     <div class="tile is-ancestor">
       <div class="tile is-7 is-parent is-vertical">
         <!-- White Death -->
         <div class="box tile is-child">
           <p class="title">White Death</p>
-            <p class="subtitle">4-2022 | Ludum Dare 50 (Compo)</p>
-            <button class="button is-primary is-medium is-fullwidth" id="game_wd_play" onclick='playInBrowser("wd", "is-4by3", "https://itch.io/embed-upload/5538726?color=000000")'>Play in browser</button></a>
-            <button class="is-hidden" id="game_wd_hide" onclick='hideInBrowser("wd","is-16by9")'>Stop Playing</button></a>         
-            
-            <figure class="is-hidden">
-              <iframe id="game_wd" class="has-ratio"frameborder="0" src="" 
-              allowfullscreen="" width="980" height="680"><a href="https://roboolet.itch.io/white-death">Play White Death on itch.io</a></iframe>   
-            </figure>                          
-            <figure class="image is-16by9" id="game_wd_cover">
-              <img src="media/whitedeath.gif">
-            </figure>
-            <div class="pt-3 buttons are-medium is-centered has-addons">
-              <!--<a class="button is-link is-outlined">
+          <p class="subtitle">4-2022 | Ludum Dare 50 (Compo)</p>
+          <button class="button is-primary is-medium is-fullwidth" id="game_wd_play"
+            onclick='playInBrowser("wd", "is-4by3", "https://itch.io/embed-upload/5538726?color=000000")'>Play in
+            browser</button></a>
+          <button class="is-hidden" id="game_wd_hide" onclick='hideInBrowser("wd","is-16by9")'>Stop Playing</button></a>
+
+          <figure class="is-hidden">
+            <iframe id="game_wd" class="has-ratio" frameborder="0" src="" allowfullscreen="" width="980" height="680"><a
+                href="https://roboolet.itch.io/white-death">Play White Death on itch.io</a></iframe>
+          </figure>
+          <figure class="image is-16by9" id="game_wd_cover">
+            <img src="media/whitedeath.gif">
+          </figure>
+          <div class="pt-3 buttons are-medium is-centered has-addons">
+            <!--<a class="button is-link is-outlined">
                 <span class="icon is-small">
                   <img src="media/icon/book.png">
                 </span>
                 <span>Details</span>
-              </a>-->  
-              <a class="button is-link is-outlined" href="https://roboolet.itch.io/white-death" target="_blank">
-                <span class="icon is-small">
-                  <img src="media/icon/itch.png">
-                </span>
-                <span>Itch.io</span>
-              </a>    
-              <a class="button is-link is-outlined" href="https://ldjam.com/events/ludum-dare/50/white-death" target="_blank">
-                <span class="icon is-small">
-                  <img src="media/icon/award.png">
-                </span>
-                <span>Jam Page</span>
-              </a>          
-              <a class="button is-link is-outlined" href="https://github.com/Roboolet/WhiteDeath" target="_blank">
-                <span class="icon is-small">
-                  <img src="media/icon/github.png">
-                </span>
-                <span>Source Code</span>
-              </a>                  
-            </div>
-        </div>     
+              </a>-->
+            <a class="button is-link is-outlined" href="https://roboolet.itch.io/white-death" target="_blank">
+              <span class="icon is-small">
+                <img src="media/icon/itch.png">
+              </span>
+              <span>Itch.io</span>
+            </a>
+            <a class="button is-link is-outlined" href="https://ldjam.com/events/ludum-dare/50/white-death"
+              target="_blank">
+              <span class="icon is-small">
+                <img src="media/icon/award.png">
+              </span>
+              <span>Jam Page</span>
+            </a>
+            <a class="button is-link is-outlined" href="https://github.com/Roboolet/WhiteDeath" target="_blank">
+              <span class="icon is-small">
+                <img src="media/icon/github.png">
+              </span>
+              <span>Source Code</span>
+            </a>
+          </div>
+        </div>
         <!-- Anatomy Stripped Down -->
-      <div class="box tile is-child">
-        <p class="title">Anatomy Stripped Down</p>
-         <p class="subtitle">6-2022</p>
-         <figure class="image is-16by9">
-          <img src="media/fontys.gif">
-        </figure>
-         <div class="pt-3 buttons are-medium is-centered has-addons">  
-           <a class="button is-link is-outlined" href="https://anatomystrippeddown.github.io/" target="_blank">
-            <span class="icon is-small">
-              <img src="media/icon/link.png">
-            </span>
-            <span>Web App (mobile friendly)</span>
-          </a>           
-         </div>
-       </div>  
-       <!-- Barnstorm -->
-      <div class="box tile is-child">
-        <p class="title">Barnstorm</p>
-         <p class="subtitle">5-2022</p>
-         <figure class="image is-16by9">
-          <iframe class="has-ratio" width="560" height="315" src="https://www.youtube.com/embed/sJJFOS8xfTM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-         </figure>
-         <div class="pt-3 buttons are-medium is-centered has-addons">         
-         </div>
-       </div> 
-      <!-- Waxhead -->
-      <div class="box tile is-child">
-        <p class="title">Waxhead</p>
-         <p class="subtitle">8-2020</p>
-         <figure class="image is-16by9">
-           <img src="media/waxhead.gif">
-         </figure>
-         <div class="pt-3 buttons are-medium is-centered has-addons">
-           <a class="button is-link is-outlined" href="https://roboolet.itch.io/waxhead" target="_blank">
-             <span class="icon is-small">
-               <img src="media/icon/itch.png">
-             </span>
-             <span>Itch.io</span>
-           </a>             
-         </div>
-       </div>  
-       <!-- Thrusthammer -->
-      <div class="box tile is-child">
-        <p class="title">Thrusthammer</p>
+        <div class="box tile is-child">
+          <p class="title">Anatomy Stripped Down</p>
+          <p class="subtitle">6-2022</p>
+          <figure class="image is-16by9">
+            <img src="media/fontys.gif">
+          </figure>
+          <div class="pt-3 buttons are-medium is-centered has-addons">
+            <a class="button is-link is-outlined" href="https://anatomystrippeddown.github.io/" target="_blank">
+              <span class="icon is-small">
+                <img src="media/icon/link.png">
+              </span>
+              <span>Web App (mobile friendly)</span>
+            </a>
+          </div>
+        </div>
+        <!-- Barnstorm -->
+        <div class="box tile is-child">
+          <p class="title">Barnstorm</p>
+          <p class="subtitle">5-2022</p>
+          <figure class="image is-16by9">
+            <iframe class="has-ratio" width="560" height="315" src="https://www.youtube.com/embed/sJJFOS8xfTM"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </figure>
+          <div class="pt-3 buttons are-medium is-centered has-addons">
+            <a class="button is-link is-outlined" href="https://github.com/mxcop/barnstorm" target="_blank">
+              <span class="icon is-small">
+                <img src="media/icon/github.png">
+              </span>
+              <span>Source Code</span>
+            </a>
+          </div>
+        </div>
+        <!-- Waxhead -->
+        <div class="box tile is-child">
+          <p class="title">Waxhead</p>
+          <p class="subtitle">8-2020</p>
+          <figure class="image is-16by9">
+            <img src="media/waxhead.gif">
+          </figure>
+          <div class="pt-3 buttons are-medium is-centered has-addons">
+            <a class="button is-link is-outlined" href="https://roboolet.itch.io/waxhead" target="_blank">
+              <span class="icon is-small">
+                <img src="media/icon/itch.png">
+              </span>
+              <span>Itch.io</span>
+            </a>
+          </div>
+        </div>
+        <!-- Thrusthammer -->
+        <div class="box tile is-child">
+          <p class="title">Thrusthammer</p>
           <p class="subtitle">8-2021 | Kenney Jam 2021</p>
-          <button class="button is-primary is-medium is-fullwidth" id="game_thr_play" onclick='playInBrowser("thr", "is-4by3", "https://itch.io/embed-upload/4340336?color=000000")'>Play in browser</button></a>
-          <button class="is-hidden" id="game_thr_hide" onclick='hideInBrowser("thr","is-16by9")'>Stop Playing</button></a>         
-          
+          <button class="button is-primary is-medium is-fullwidth" id="game_thr_play"
+            onclick='playInBrowser("thr", "is-4by3", "https://itch.io/embed-upload/4340336?color=000000")'>Play in
+            browser</button></a>
+          <button class="is-hidden" id="game_thr_hide" onclick='hideInBrowser("thr","is-16by9")'>Stop
+            Playing</button></a>
+
           <figure class="is-hidden">
-            <iframe id="game_thr" class="has-ratio" frameborder="0" src="" allowfullscreen="" width="400" height="300"><a href="https://roboolet.itch.io/thrusthammer">Play THRUSTHAMMER on itch.io</a></iframe>
-          </figure>                          
+            <iframe id="game_thr" class="has-ratio" frameborder="0" src="" allowfullscreen="" width="400"
+              height="300"><a href="https://roboolet.itch.io/thrusthammer">Play THRUSTHAMMER on itch.io</a></iframe>
+          </figure>
           <figure class="image is-16by9" id="game_thr_cover">
             <img src="media/thrusthammer.gif">
           </figure>
-          <div class="pt-3 buttons are-medium is-centered has-addons">              
+          <div class="pt-3 buttons are-medium is-centered has-addons">
             <a class="button is-link is-outlined" href="https://roboolet.itch.io/thrusthammer" target="_blank">
               <span class="icon is-small">
                 <img src="media/icon/itch.png">
               </span>
               <span>Itch.io</span>
-            </a>    
-            <a class="button is-link is-outlined" href="https://itch.io/jam/kenney-jam-2021/rate/1168319" target="_blank">
+            </a>
+            <a class="button is-link is-outlined" href="https://itch.io/jam/kenney-jam-2021/rate/1168319"
+              target="_blank">
               <span class="icon is-small">
                 <img src="media/icon/award.png">
               </span>
               <span>Jam Page</span>
-            </a>           
+            </a>
           </div>
-      </div> 
-       
-          
-    </div>
-    <div class="tile is-5 is-parent is-vertical">
-      <!-- Hostile Climate -->
-      <div class="box tile is-child">
-        <p class="title">Hostile Climate</p>
+        </div>
+
+
+      </div>
+      <div class="tile is-5 is-parent is-vertical">
+        <!-- Hostile Climate -->
+        <div class="box tile is-child">
+          <p class="title">Hostile Climate</p>
           <p class="subtitle">10-2022 | Ludum Dare 51 (Compo)</p>
-          <button class="button is-primary is-medium is-fullwidth" id="game_climate_play" onclick='playInBrowser("climate", "is-5by4", "https://itch.io/embed-upload/6601926?color=000000")'>Play in browser</button></a>
-          <button class="is-hidden" id="game_climate_hide" onclick='hideInBrowser("climate", "is-1by1")'>Stop Playing</button></a>         
-          
+          <button class="button is-primary is-medium is-fullwidth" id="game_climate_play"
+            onclick='playInBrowser("climate", "is-5by4", "https://itch.io/embed-upload/6601926?color=000000")'>Play in
+            browser</button></a>
+          <button class="is-hidden" id="game_climate_hide" onclick='hideInBrowser("climate", "is-1by1")'>Stop
+            Playing</button></a>
+
           <figure class="is-hidden">
-            <iframe class="has-ratio" id="game_climate" frameborder="0" src="" allowfullscreen="" width="1024" height="916"><a href="https://roboolet.itch.io/hostile-climate">Play Hostile Climate on itch.io</a></iframe>
+            <iframe class="has-ratio" id="game_climate" frameborder="0" src="" allowfullscreen="" width="1024"
+              height="916"><a href="https://roboolet.itch.io/hostile-climate">Play Hostile Climate on
+                itch.io</a></iframe>
           </figure>
-                        
+
           <figure class="image is-1by1" id="game_climate_cover">
             <img src="media/hostile climate.gif">
           </figure>
-          <div class="pt-3 buttons are-medium is-centered has-addons">          
+          <div class="pt-3 buttons are-medium is-centered has-addons">
             <a class="button is-link is-outlined" href="https://roboolet.itch.io/hostile-climate" target="_blank">
               <span class="icon is-small">
                 <img src="media/icon/itch.png">
               </span>
               <span>Itch.io</span>
-            </a>    
-            <a class="button is-link is-outlined" href="https://ldjam.com/events/ludum-dare/51/hostile-climate" target="_blank">
+            </a>
+            <a class="button is-link is-outlined" href="https://ldjam.com/events/ludum-dare/51/hostile-climate"
+              target="_blank">
               <span class="icon is-small">
                 <img src="media/icon/award.png">
               </span>
               <span>Jam Page</span>
-            </a>  
+            </a>
             <a class="button is-link is-outlined" href="https://www.lexaloffle.com/bbs/?tid=49615" target="_blank">
               <span class="icon is-small">
                 <img src="media/icon/pico.png">
               </span>
               <span>Source Code</span>
-            </a>                    
+            </a>
           </div>
-      </div>   
-      <!-- JAUT! -->
-      <div class="box tile is-child">
-        <p class="title">Jaut!!</p>
+        </div>
+        <!-- JAUT! -->
+        <div class="box tile is-child">
+          <p class="title">Jaut!!</p>
           <p class="subtitle">7-2022 | GMTK Jam 2022</p>
-          <button class="button is-primary is-medium is-fullwidth" id="game_jaut_play" onclick='playInBrowser("jaut", "is-5by4", "https://itch.io/embed-upload/6224920?color=020202")'>Play in browser</button></a>
-          <button class="is-hidden" id="game_jaut_hide" onclick='hideInBrowser("jaut", "is-1by1")'>Stop Playing</button></a>         
-          
+          <button class="button is-primary is-medium is-fullwidth" id="game_jaut_play"
+            onclick='playInBrowser("jaut", "is-5by4", "https://itch.io/embed-upload/6224920?color=020202")'>Play in
+            browser</button></a>
+          <button class="is-hidden" id="game_jaut_hide" onclick='hideInBrowser("jaut", "is-1by1")'>Stop
+            Playing</button></a>
+
           <figure class="is-hidden">
-            <iframe class="has-ratio" id="game_jaut" frameborder="0" src="" allowfullscreen="" width="896" height="916"><a href="https://roboolet.itch.io/jaut">Play Jaut!! on itch.io</a></iframe>
+            <iframe class="has-ratio" id="game_jaut" frameborder="0" src="" allowfullscreen="" width="896"
+              height="916"><a href="https://roboolet.itch.io/jaut">Play Jaut!! on itch.io</a></iframe>
           </figure>
-                        
+
           <figure class="image is-1by1" id="game_jaut_cover">
             <img src="media/jaut.gif">
           </figure>
-          <div class="pt-3 buttons are-medium is-centered has-addons">          
+          <div class="pt-3 buttons are-medium is-centered has-addons">
             <a class="button is-link is-outlined" href="https://roboolet.itch.io/jaut" target="_blank">
               <span class="icon is-small">
                 <img src="media/icon/itch.png">
               </span>
               <span>Itch.io</span>
-            </a>    
+            </a>
             <a class="button is-link is-outlined" href="https://itch.io/jam/gmtk-jam-2022/rate/1622286" target="_blank">
               <span class="icon is-small">
                 <img src="media/icon/award.png">
               </span>
               <span>Jam Page</span>
-            </a>                 
+            </a>
             <a class="button is-link is-outlined" href="https://www.lexaloffle.com/bbs/?tid=49616" target="_blank">
               <span class="icon is-small">
                 <img src="media/icon/pico.png">
               </span>
               <span>Source Code</span>
-            </a>   
+            </a>
           </div>
-      </div>  
-      <div class="box tile is-parent is-vertical">
-        <span class="has-text-centered is-italic">Games made during my internship at <a href="https://nightowlgames.nl/" target="_blank">NightOwl Games</a></span>
-        <div class="tile is-parent">
-        <!-- Boom Bounce -->
-        <div class="box tile is-child is-6">
-  <p class="title">Boom Bounce</p>
-    <p class="subtitle">12-2021</p>
-                  
-    <figure class="image is-9by16">
-      <img src="media/klackerballs.gif">
-    </figure>
-    <div class="pt-3 buttons are-medium is-centered has-addons">
-      <a class="button is-link is-outlined" href="https://apps.apple.com/lb/app/klackerballs/id1600507236#?platform=iphone" target="_blank">
-        <span class="icon is-small">
-          <img src="media/icon/ios.png">
-        </span>
-        <span>App Store</span>        
-      <a class="button is-link is-outlined" href="https://play.google.com/store/apps/details?id=com.NightOwlGames.Klackerball&hl=nl&gl=US" target="_blank">
-        <span class="icon is-small">
-          <img src="media/icon/google.png">
-        </span>
-        <span>Google Play</span>
-      </a>              
-    </div>
-        </div>  
-        <!-- Simon Stacks -->
-        <div class="box tile is-child is-6">
-          <p class="title">Simon Stacks</p>
-            <p class="subtitle">2-2022</p>
-                          
-            <figure class="image is-1by1">
-              <img src="media/simonstacks.webp">
-            </figure>
-            <div class="pt-3 buttons are-medium is-centered has-addons">
-              <a class="button is-link is-outlined" href="https://play.google.com/store/apps/details?id=com.NightOwlGames.SimonStacks&hl=nl&gl=US" target="_blank">
-                <span class="icon is-small">
-                  <img src="media/icon/google.png">
-                </span>
-                <span>Google Play</span>
-              </a>              
-            </div>
-        </div>  
-        </div>        
-      </div>             
-      <!-- Rogue Planets -->
-      <div class="box tile is-child">
-        <p class="title">Rogue Planets</p>
-            <p class="subtitle">11-2021 | Ludum Dare 49 (Jam)</p>
-            <figure class="image is-16by9">
-              <img src="media/rogueplanets.gif">
-            </figure>
-            <div class="pt-3 buttons are-medium is-centered has-addons">                     
-              <a class="button is-link is-outlined" href="https://roboolet.itch.io/rogue-planets" target="_blank">
-                <span class="icon is-small">
-                  <img src="media/icon/itch.png">
-                </span>
-                <span>Itch.io</span>
-              </a>       
-              <a class="button is-link is-outlined" href="https://ldjam.com/events/ludum-dare/49/rogue-planets" target="_blank">
-                <span class="icon is-small">
-                  <img src="media/icon/award.png">
-                </span>
-                <span>Jam Page</span>
-              </a>    
-              <a class="button is-link is-outlined" href="https://github.com/Roboolet/ld49" target="_blank">
-                <span class="icon is-small">
-                  <img src="media/icon/github.png">
-                </span>
-                <span>Source Code</span>
-              </a>          
-            </div>
-      </div>  
-      <!-- Septillion Sorcery -->
-      <div class="box tile is-child">
-        <p class="title">Septillion Sorcery</p>
-         <p class="subtitle">4-2021</p>
-         <figure class="image is-16by9">
-           <img src="media/septillion.gif">
-         </figure>
-         <div class="pt-3 buttons are-medium is-centered has-addons">   
-           <a class="button is-link is-outlined" href="https://roboolet.itch.io/septillion-sorcery" target="_blank">
-             <span class="icon is-small">
-               <img src="media/icon/itch.png">
-             </span>
-             <span>Itch.io</span>
-           </a>             
-         </div>
-       </div>      
-        
-          
-  </div>
-    </div>
-  <!--Enabling and disabling the game embeds-->
-  <script>function playInBrowser(){
-    document.getElementById("game_"+arguments[0]).hidden = false       
-    document.getElementById("game_"+arguments[0]).src = arguments[2] 
-    document.getElementById("game_"+arguments[0]).parentElement.className="image "+arguments[1]
-    document.getElementById("game_"+arguments[0]+"_cover").className="is-hidden"
-    document.getElementById("game_"+arguments[0]+"_play").className="is-hidden"              
-    document.getElementById("game_"+arguments[0]+"_hide").className="button is-dark is-medium is-fullwidth"
-  }</script>    
-  <script>function hideInBrowser(){
-    document.getElementById("game_"+arguments[0]).hidden = true
-    document.getElementById("game_"+arguments[0]).src = ""
-    document.getElementById("game_"+arguments[0]).parentElement.className="is-hidden"
-    document.getElementById("game_"+arguments[0]+"_cover").className="image "+arguments[1]
-    document.getElementById("game_"+arguments[0]+"_play").className="button is-primary is-medium is-fullwidth"              
-    document.getElementById("game_"+arguments[0]+"_hide").className="is-hidden"
-  }</script> 
-</section>
+        </div>
+        <div class="box tile is-parent is-vertical">
+          <span class="has-text-centered is-italic">Games made during my internship at <a
+              href="https://nightowlgames.nl/" target="_blank">NightOwl Games</a></span>
+          <div class="tile is-parent">
+            <!-- Boom Bounce -->
+            <div class="box tile is-child is-6">
+              <p class="title">Boom Bounce</p>
+              <p class="subtitle">12-2021</p>
 
-<footer class="footer has-background-dark">
-  <div class="has-text-centered">
-    <a class="mx-1 icon" href="https://roboolet.itch.io/" target="_blank">
-      <img src="media/icon/white/itch.png">
-    </a>
-    <a class="mx-1 icon"href="https://github.com/Roboolet" target="_blank">
-      <img src="media/icon/white/github.png">
-    </a>
-    <a class="mx-1 icon"href="https://twitter.com/roboolet" target="_blank">
-      <img src="media/icon/white/twitter.png">
-    </a>
-    <a class="mx-1 icon"href="https://www.linkedin.com/in/bram-van-der-cruijsen-67a87820a/" target="_blank">
-      <img src="media/icon/white/linkedin.png">
-    </a>
-  </div>
-</footer>
+              <figure class="image is-9by16">
+                <img src="media/klackerballs.gif">
+              </figure>
+              <div class="pt-3 buttons are-medium is-centered has-addons">
+                <a class="button is-link is-outlined"
+                  href="https://apps.apple.com/lb/app/klackerballs/id1600507236#?platform=iphone" target="_blank">
+                  <span class="icon is-small">
+                    <img src="media/icon/ios.png">
+                  </span>
+                  <span>App Store</span>
+                  <a class="button is-link is-outlined"
+                    href="https://play.google.com/store/apps/details?id=com.NightOwlGames.Klackerball&hl=nl&gl=US"
+                    target="_blank">
+                    <span class="icon is-small">
+                      <img src="media/icon/google.png">
+                    </span>
+                    <span>Google Play</span>
+                  </a>
+              </div>
+            </div>
+            <!-- Simon Stacks -->
+            <div class="box tile is-child is-6">
+              <p class="title">Simon Stacks</p>
+              <p class="subtitle">2-2022</p>
+
+              <figure class="image is-1by1">
+                <img src="media/simonstacks.webp">
+              </figure>
+              <div class="pt-3 buttons are-medium is-centered has-addons">
+                <a class="button is-link is-outlined"
+                  href="https://play.google.com/store/apps/details?id=com.NightOwlGames.SimonStacks&hl=nl&gl=US"
+                  target="_blank">
+                  <span class="icon is-small">
+                    <img src="media/icon/google.png">
+                  </span>
+                  <span>Google Play</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Rogue Planets -->
+        <div class="box tile is-child">
+          <p class="title">Rogue Planets</p>
+          <p class="subtitle">11-2021 | Ludum Dare 49 (Jam)</p>
+          <figure class="image is-16by9">
+            <img src="media/rogueplanets.gif">
+          </figure>
+          <div class="pt-3 buttons are-medium is-centered has-addons">
+            <a class="button is-link is-outlined" href="https://roboolet.itch.io/rogue-planets" target="_blank">
+              <span class="icon is-small">
+                <img src="media/icon/itch.png">
+              </span>
+              <span>Itch.io</span>
+            </a>
+            <a class="button is-link is-outlined" href="https://ldjam.com/events/ludum-dare/49/rogue-planets"
+              target="_blank">
+              <span class="icon is-small">
+                <img src="media/icon/award.png">
+              </span>
+              <span>Jam Page</span>
+            </a>
+            <a class="button is-link is-outlined" href="https://github.com/Roboolet/ld49" target="_blank">
+              <span class="icon is-small">
+                <img src="media/icon/github.png">
+              </span>
+              <span>Source Code</span>
+            </a>
+          </div>
+        </div>
+        <!-- Septillion Sorcery -->
+        <div class="box tile is-child">
+          <p class="title">Septillion Sorcery</p>
+          <p class="subtitle">4-2021</p>
+          <figure class="image is-16by9">
+            <img src="media/septillion.gif">
+          </figure>
+          <div class="pt-3 buttons are-medium is-centered has-addons">
+            <a class="button is-link is-outlined" href="https://roboolet.itch.io/septillion-sorcery" target="_blank">
+              <span class="icon is-small">
+                <img src="media/icon/itch.png">
+              </span>
+              <span>Itch.io</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Enabling and disabling the game embeds-->
+    <script>function playInBrowser() {
+      var e = "game_" + arguments[0]
+        document.getElementById(e).hidden = false
+        document.getElementById(e).src = arguments[2]
+        document.getElementById(e).parentElement.className = "image " + arguments[1]
+        document.getElementById(e + "_cover").className = "is-hidden"
+        document.getElementById(e + "_play").className = "is-hidden"
+        document.getElementById(e + "_hide").className = "button is-dark is-medium is-fullwidth"
+      }</script>
+    <script>function hideInBrowser() {
+      var e = "game_" + arguments[0]
+        document.getElementById(e).hidden = true
+        document.getElementById(e).src = ""
+        document.getElementById(e).parentElement.className = "is-hidden"
+        document.getElementById(e + "_cover").className = "image " + arguments[1]
+        document.getElementById(e + "_play").className = "button is-primary is-medium is-fullwidth"
+        document.getElementById(e + "_hide").className = "is-hidden"
+      }</script>
+  </section>
+
+  <footer class="footer has-background-dark">
+    <div class="has-text-centered">
+      <a class="mx-1 icon" href="https://roboolet.itch.io/" target="_blank">
+        <img src="media/icon/white/itch.png">
+      </a>
+      <a class="mx-1 icon" href="https://github.com/Roboolet" target="_blank">
+        <img src="media/icon/white/github.png">
+      </a>
+      <a class="mx-1 icon" href="https://twitter.com/roboolet" target="_blank">
+        <img src="media/icon/white/twitter.png">
+      </a>
+      <a class="mx-1 icon" href="https://www.linkedin.com/in/bram-van-der-cruijsen-67a87820a/" target="_blank">
+        <img src="media/icon/white/linkedin.png">
+      </a>
+    </div>
+  </footer>
 
 </body>
+
 </html>
