@@ -1,117 +1,152 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Anatomy Stripped Down</title>
-    <link rel="shortcut icon" type="image/png" href="../media/favicon.png">
-    <link rel="stylesheet" href="../bulma/css/bulma.css">
-  </head>  
-  <body>
-    <script src="../menu.js"></script>
 
-    <nav class="navbar is-fixed-top is-dark">
-      <div class="container">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="../index.html">
-            <div class="column">
-              <p class="title has-text-light">
-                Games from Centauri
-              </p>
-              <p class="subtitle has-text-light ml-3">
-                Taken directly from the cosmos!
-              </p>
-            </div>
-          </a>
-          <span class="navbar-burger is-white" id="navbar-burger" data-target="navbarMenuHeroA">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-        </div>
-        <div id="navbarMenuHeroA" class="navbar-menu">
-          <div class="navbar-end">
-            <a class="navbar-item is-active" href="../index.html">
-              Projects
-            </a>
-            <a class="navbar-item " href="../cv.html">
-              CV
-            </a>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anatomy Stripped Down</title>
+  <link rel="shortcut icon" type="image/png" href="../media/favicon.png">
+  <link rel="stylesheet" href="../bulma/css/bulma.css">
+
+  <!-- Google / Search Engine Tags -->
+  <meta itemprop="name" content="Games From Centauri">
+  <meta itemprop="description" content="Anatomy Stripped Down project page">
+  <meta itemprop="image" content="https://roboolet.github.io/media/social.png">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://roboolet.github.io/articles/anatomy.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Games From Centauri | Anatomy Stripped Down">
+  <meta property="og:description" content="Anatomy Stripped Down project page">
+  <meta property="og:image" content="https://roboolet.github.io/media/social.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Games From Centauri | Anatomy Stripped Down">
+  <meta name="twitter:description" content="Anatomy Stripped Down project page">
+  <meta name="twitter:image" content="https://roboolet.github.io/media/social.png">
+</head>
+
+<body>
+  <script src="../menu.js"></script>
+
+  <nav class="navbar is-fixed-top is-dark">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="../index.html">
+          <div class="column">
+            <p class="title has-text-light">
+              Games from Centauri
+            </p>
+            <p class="subtitle has-text-light ml-3">
+              Taken directly from the cosmos!
+            </p>
           </div>
+        </a>
+        <span class="navbar-burger is-white" id="navbar-burger" data-target="navbarMenuHeroA">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </div>
+      <div id="navbarMenuHeroA" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item is-active" href="../index.html">
+            Projects
+          </a>
+          <a class="navbar-item " href="../cv.html">
+            CV
+          </a>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <section class="section has-background-light mt-12">
-      <content class="box has-text-centered">  
-        <p class="is-size-1">Anatomy Stripped Down</p>
-        <p class="is-size-5">April 2022 - July 2022</p>
-        <div class="pt-3 buttons are-medium is-centered has-addons">
-          <a class="button is-link is-outlined" href="https://anatomystrippeddown.github.io/" target="_blank">
-            <span class="icon is-small">
-              <img src="../media/icon/link.png">
-            </span>
-            <span class="pl-3">Web App (mobile friendly)</span>
-          </a>
-        </div>
-      </content> 
-      <content class="box has-text-left">  
-        <p class="is-size-4 pb-1">Case</p>    
-        <p> This project was started due to a request by the Fontys Hogeschool's MBRT (Medical Imaging and Radiotherapeutic Techniques) department. One of their students' goals
-          is to learn the names (in Latin and Dutch/English) and locations of the bones in the human body, but the currently used ways of learning these is very dated. Students would have to look at low quality drawings and
-          play connect-the-dots with numbers on the image. Our task was to put this information in an easy-to-read format, and provide some form of gamification to make
-          the learning process more enjoyable.
-        </p>
-        <p class="is-size-4 pb-1 mt-3">Project</p>    
-        <p> The most important piece of the program is the 3D skeleton viewer. This scene allows you to look around a 3D model of the skeleton, and select any bone in the body. 
-          Selected bones display their Latinized name, name in the local language (English or Dutch), and various points of interest of the bone.
-          Selected bones can be isolated to get a better view, and you can toggle off the points of interest. Bones can also be manually searched via the search bar 
-          using their Latin or local name.
-        </p>
-        <p class="mt-1"> Aside from the 3D viewer, there are currently two minigames available that may supplement the learning experience. The first game is a memory-variant where you have
-          to find the correct pair of latin and localized name. The other is an incomplete quiz game.
-        </p>
-        <p class="is-size-4 pb-1 mt-3">My Contributions</p>    
-        <p> I was tasked with creating the 3D viewer and it's systems, and created the memory minigame as well. Aside from those, i also did other small tasks such as the 
-          language switcher and scene manager.
-        </p>
-        <p class="mt-1"> Using the Unity Input System package i created the 3D viewer controls. I worked to create an intuitive control scheme for both PC and mobile users.
-          Besides the controls, i also developed the systems for displaying points of interest, and set up an LOD script to lessen the load of the high detail models. Both of these
-          required lots of editor scripting to help setting up the info.
-        </p>
-        <p class="mt-1"> For the memory game i reused the 3D viewer's controls and systems. The possible pairs that can appear can be configured in the options menu. So you can turn off all
-          the cards about the torso for instance.
-        </p>
-        <p class="is-size-4 pb-1 mt-3">Team</p>    
-        <p class="mb-2">Besides myself, our team consisted of 3 other developers and 6 artists. They are:</p>     
-        <p><span class="has-text-weight-bold">Julian Snelders</span> - Web developer</p>
-        <p><span class="has-text-weight-bold">Red Rutgers</span> - UI developer</p>
-        <p><a class="has-text-weight-bold" href="https://j111m.github.io/Portfolio/" target="_blank">Jim van der Heijden</a> - Gameplay developer</p>
-        <p><a class="has-text-weight-bold" href="https://www.behance.net/lucianoummels" target="_blank">Luciano Ummels</a> - 3D artist</p>
-        <p><span class="has-text-weight-bold">Salman Mohamed</span> - 3D artist</p>
-        <p><span class="has-text-weight-bold">Shannon Kremers</span> - UI artist</p>
-        <p><span class="has-text-weight-bold">Danny van Zoggel</span> - UI artist</p>
-        <p><a class="has-text-weight-bold" href="https://www.behance.net/freeksmulders/projects" target="_blank">Freek Smulders</a> - Artist</p>
-        <p><span class="has-text-weight-bold">Mike Meurkens</span> - Artist</p>
-        <img class="mt-4" src="../media/fontys.gif">        
-      </content>      
-    </section>
+  <section class="section has-background-light mt-12">
+    <content class="box has-text-centered">
+      <p class="is-size-1">Anatomy Stripped Down</p>
+      <p class="is-size-5">April 2022 - July 2022</p>
+      <div class="pt-3 buttons are-medium is-centered has-addons">
+        <a class="button is-link is-outlined" href="https://anatomystrippeddown.github.io/" target="_blank">
+          <span class="icon is-small">
+            <img src="../media/icon/link.png">
+          </span>
+          <span class="pl-3">Web App (mobile friendly)</span>
+        </a>
+      </div>
+    </content>
+    <content class="box has-text-left">
+      <p class="is-size-4 pb-1">Case</p>
+      <p> This project was started due to a request by the Fontys Hogeschool's MBRT (Medical Imaging and
+        Radiotherapeutic Techniques) department. One of their students' goals
+        is to learn the names (in Latin and Dutch/English) and locations of the bones in the human body, but the
+        currently used ways of learning these is very dated. Students would have to look at low quality drawings and
+        play connect-the-dots with numbers on the image. Our task was to put this information in an easy-to-read format,
+        and provide some form of gamification to make
+        the learning process more enjoyable.
+      </p>
+      <p class="is-size-4 pb-1 mt-3">Project</p>
+      <p> The most important piece of the program is the 3D skeleton viewer. This scene allows you to look around a 3D
+        model of the skeleton, and select any bone in the body.
+        Selected bones display their Latinized name, name in the local language (English or Dutch), and various points
+        of interest of the bone.
+        Selected bones can be isolated to get a better view, and you can toggle off the points of interest. Bones can
+        also be manually searched via the search bar
+        using their Latin or local name.
+      </p>
+      <p class="mt-1"> Aside from the 3D viewer, there are currently two minigames available that may supplement the
+        learning experience. The first game is a memory-variant where you have
+        to find the correct pair of latin and localized name. The other is an incomplete quiz game.
+      </p>
+      <p class="is-size-4 pb-1 mt-3">My Contributions</p>
+      <p> I was tasked with creating the 3D viewer and it's systems, and created the memory minigame as well. Aside from
+        those, i also did other small tasks such as the
+        language switcher and scene manager.
+      </p>
+      <p class="mt-1"> Using the Unity Input System package i created the 3D viewer controls. I worked to create an
+        intuitive control scheme for both PC and mobile users.
+        Besides the controls, i also developed the systems for displaying points of interest, and set up an LOD script
+        to lessen the load of the high detail models. Both of these
+        required lots of editor scripting to help setting up the info.
+      </p>
+      <p class="mt-1"> For the memory game i reused the 3D viewer's controls and systems. The possible pairs that can
+        appear can be configured in the options menu. So you can turn off all
+        the cards about the torso for instance.
+      </p>
+      <p class="is-size-4 pb-1 mt-3">Team</p>
+      <p class="mb-2">Besides myself, our team consisted of 3 other developers and 6 artists. They are:</p>
+      <p><span class="has-text-weight-bold">Julian Snelders</span> - Web developer</p>
+      <p><span class="has-text-weight-bold">Red Rutgers</span> - UI developer</p>
+      <p><a class="has-text-weight-bold" href="https://j111m.github.io/Portfolio/" target="_blank">Jim van der
+          Heijden</a> - Gameplay developer</p>
+      <p><a class="has-text-weight-bold" href="https://www.behance.net/lucianoummels" target="_blank">Luciano Ummels</a>
+        - 3D artist</p>
+      <p><span class="has-text-weight-bold">Salman Mohamed</span> - 3D artist</p>
+      <p><span class="has-text-weight-bold">Shannon Kremers</span> - UI artist</p>
+      <p><span class="has-text-weight-bold">Danny van Zoggel</span> - UI artist</p>
+      <p><a class="has-text-weight-bold" href="https://www.behance.net/freeksmulders/projects" target="_blank">Freek
+          Smulders</a> - Artist</p>
+      <p><span class="has-text-weight-bold">Mike Meurkens</span> - Artist</p>
+      <img class="mt-4" src="../media/fontys.gif">
+    </content>
+  </section>
 
-      <footer class="footer has-background-dark">
-        <div class="has-text-centered">
-          <a class="mx-1 icon" href="https://roboolet.itch.io/" target="_blank">
-            <img src="../media/icon/white/itch.png">
-          </a>
-          <a class="mx-1 icon"href="https://github.com/Roboolet" target="_blank">
-            <img src="../media/icon/white/github.png">
-          </a>
-          <a class="mx-1 icon"href="https://twitter.com/roboolet" target="_blank">
-            <img src="../media/icon/white/twitter.png">
-          </a>
-          <a class="mx-1 icon"href="https://www.linkedin.com/in/bram-van-der-cruijsen-67a87820a/" target="_blank">
-            <img src="../media/icon/white/linkedin.png">
-          </a>
-        </div>
-      </footer>
-  </body> 
+  <footer class="footer has-background-dark">
+    <div class="has-text-centered">
+      <a class="mx-1 icon" href="https://roboolet.itch.io/" target="_blank">
+        <img src="../media/icon/white/itch.png">
+      </a>
+      <a class="mx-1 icon" href="https://github.com/Roboolet" target="_blank">
+        <img src="../media/icon/white/github.png">
+      </a>
+      <a class="mx-1 icon" href="https://twitter.com/roboolet" target="_blank">
+        <img src="../media/icon/white/twitter.png">
+      </a>
+      <a class="mx-1 icon" href="https://www.linkedin.com/in/bram-van-der-cruijsen-67a87820a/" target="_blank">
+        <img src="../media/icon/white/linkedin.png">
+      </a>
+    </div>
+  </footer>
+</body>
+
 </html>
