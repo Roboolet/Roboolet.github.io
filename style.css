@@ -1,9 +1,94 @@
 body {
     background-color: rgb(255, 239, 216);
+    font: 15px 'Segoe UI', sans-serif;    
+    overflow-y: scroll;
+}
+h1, h2, h3, p, li, hr {
+    padding: 0;
+    margin: 0;
+}
+ul {
+    padding-left: 1.5em;
+    margin: 0;
+}
+h2 {
+    font-size: 1.5em;
+    font-weight: normal;
+}
+p {
+    margin-top: 8px;
 }
 
-@media only screen and (min-width: 768px){
 #works {
-    padding-left: 5rem;
+    margin-left: 47vw;
+    min-height: 100%;
+    max-width: 500px;
+    background: #fffaf3;
+    padding: 1px 6px 6px 6px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
+#left-wrapper {
+    position: fixed;
+    top: 8px;
+    width: 45vw;    
+    min-height: 100%;
+    background: #fffaf3;
+    padding: 0 6px 6px 6px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
+.header {
+    display: block;
+    overflow: hidden;
+    background: #a47e5a url(img/menu-smooth-out.jpg?t=20-02-22) no-repeat;
+    background-position: 0 -64px;
+    height: 64px;
+    margin-top: 6px;
+    line-height: 16px;
+    text-decoration: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+.header > div {
+    display: inline-block;
+    padding: 10px;
+    height: 48px;
+    background: url(img/menu-item.png) right no-repeat;
+    color: rgb(255, 255, 255);
+    padding-right: 28px;
+}
+.header .title {
+    height: 24px;
+    font-size: 24px;
+    line-height: 24px;
+    display: block;
+}
+.header > .date {
+    right: 1px;
+    top: 0;
+    background: url(img/menu-date.png) top left;
+}
+.header > .type {
+    right: 1px;
+    bottom: 2px;
+    background: url(img/menu-date.png) bottom left;
+}
+.header .type, .header .date {
+    display: inline-block;
+    position: absolute;
+    padding: 2px 3px 2px 8px;
+    color: white;
+}
+.box{
+    display: block;
+    height: auto;
+    padding: 6px;
+    margin-top: 6px;
+    line-height: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+.no-selection{
+    color: rgba(0, 0, 0, 0.386);
+    text-align: center;
+}
+
