@@ -39,9 +39,12 @@ p {
     padding: 0 6px 6px 6px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
+#details{
+    overflow-y: scroll;
+}
 .header {
     display: block;
-    overflow: hidden;
+    overflow-y: hidden;
     background: #a47e5a url(media/banners.png) no-repeat;
     height: 64px;
     margin-top: 6px;
@@ -96,11 +99,11 @@ p {
     height: 0px;
 }
 
-img{
+.popup img{
     display: block;
     padding-top: 25px;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    max-block-size: 50ex;
 }
 
